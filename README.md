@@ -6,11 +6,11 @@ The source code has been published on GitHub Repository under _MIT License_.
 Please visit `LICENSE` file to read the details about the license.
 
 ## About the project
-Languages :
-C#
-ASP
-Javascript
-
-Technology :
-Bootstrap 5 CSS
-Microsoft SQL
+Languages :<br>
+C#<br>
+ASP<br>
+Javascript<br>
+<br>
+Technology :<br>
+Bootstrap 5 CSS<br>
+Microsoft SQL<br>
