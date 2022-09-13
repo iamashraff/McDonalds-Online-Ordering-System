@@ -1,1 +1,1 @@
-# McDonalds-Online-Ordering-System
+# McDonalds Online Ordering System
