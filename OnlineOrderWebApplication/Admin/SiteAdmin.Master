@@ -1,0 +1,114 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteAdmin.master.cs" Inherits="OnlineOrderWebApplication.Admin.SiteAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="../Styles/jquery-3.3.1.min.js"></script>
+     <script src="../Styles/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="Styles/styles.css" rel="stylesheet" />
+    <script src="Styles/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="Styles/scripts.js"></script>
+    <link href="../Content/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Styles/animate.min.css"/>
+
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+<body>
+
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-warning">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">
+                <img src="../Images/logo.svg" width="50" height="50" alt="">
+            </a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-danger border border-dark" id="sidebarToggle" href="#!"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hello, <asp:Label ID="lblAdminName" runat="server" Text="Label"></asp:Label></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" runat="server" id="lnkLogout" onserverclick="lnkLogout_Click" href="#">Logout</a></li>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Main</div>
+                            <a class="nav-link" href="Dashboard.aspx">
+                                <div class="sb-nav-link-icon"><i class="fa fa-tachometer" aria-hidden="true"></i></div>
+                                Dashboard
+                            </a>
+                            </div>
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Manage</div>
+                            <a class="nav-link" href="ViewCustomer.aspx">
+                                <div class="sb-nav-link-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                Customer
+                            </a>
+                            <a class="nav-link" href="ViewOrder.aspx">
+                                <div class="sb-nav-link-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                                Orders
+                            </a>
+                            </div> 
+                    </div>
+
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+
+                <main>
+
+                    <div class="container-fluid px-4 ">
+                            <form id="form1" runat="server">
+                                <div>
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </form>
+     
+                        
+                    </div>
+                </main>
+                <footer class="py-4 bg-dark mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-light">Copyright &copy; 2022 Gerbang Alaf Restaurants Sdn Bhd (65351-M)</div>
+
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

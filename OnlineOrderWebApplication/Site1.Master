@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OnlineOrderWebApplication.Site1" %>
+
+<%@ Register Src="~/UserControls/LoginBtn.ascx" TagPrefix="uc1" TagName="LoginBtn" %>
+<%@ Register Src="~/UserControls/LoginHeader.ascx" TagPrefix="uc1" TagName="LoginHeader" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+   
+
+    <script type="text/javascript" src="Styles/jquery-3.3.1.min.js"></script>
+       <script src="Styles/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/animate.min.css"/>
+    <link href="Styles/fullscreen.css" rel="stylesheet" />
+
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+<body style="background-color:#F3F3F3;">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="Default.aspx">
+        <img src="Images/logo.svg" width="50" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class=" navbar-collapse">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="Default.aspx"><b>Home</b> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Menu.aspx"><b>Menu</b> <span class="sr-only">(current)</span></a>
+          </li>
+            <uc1:LoginHeader runat="server" id="LoginHeader" />
+
+        </ul>
+
+            <span class="navbar-text">
+           <!-- Login Button Here -->
+
+    <uc1:LoginBtn runat="server" ID="LoginBtn" />
+
+
+                
+            
+        </span>
+      </div>
+                 
+    </nav>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+</body>
+
+<footer class="text-center  bg-dark py-3">
+
+  <!-- Copyright -->
+  <div class="align-items-center">
+      <p>
+          <a href="https://www.facebook.com/My.McDonalds/"><i class="fa fa-facebook text-warning" style="font-size:22px;" aria-hidden="true"></i></a>
+          &nbsp;
+          <a href="https://twitter.com/McDMalaysia"><i class="fa fa-twitter text-warning" style="font-size:22px;" aria-hidden="true"></i></a>
+          &nbsp;
+          <a href="https://www.instagram.com/mcdonaldsmalaysia/"><i class="fa fa-instagram text-warning" style="font-size:22px;" aria-hidden="true"></i></a>
+      </p>
+      <small class="text-white">© 2022 McDonalds Malaysia. All Rights Reserved by Gerbang Alaf Restaurants Sdn Bhd (65351-M).<br />Licensee of McDonald’s® The Golden Arches Logo and “I’m lovin’ it” are trademarks of McDonald’s® Corporation and its affiliates.</small>
+  </div>
+
+  <!-- Copyright -->
+
+</footer>
+</html>
