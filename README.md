@@ -65,3 +65,27 @@ Admin
 
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Login_RFV.png?token=GHSAT0AAAAAAB5ZMXGI4BFSCCEELEVPXAOEY6ZTJDQ)
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Login_noAccount.png?token=GHSAT0AAAAAAB5ZMXGJTOHGWFVJVNB2US6KY6ZTNVQ)
+
+## Customer Side
+
+**Registration Page**
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Register.aspx.png)
+
+**Menu Page**
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_Category.png)
+
+Menu Category:
+ - Burgers
+ - Ayam Goreng & Nuggets
+ - Bubur & Nasi Lemak
+ - Drinks
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_1.png)
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_2.png)
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_3.png)
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_4.png)
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Menu_POV2.png)
