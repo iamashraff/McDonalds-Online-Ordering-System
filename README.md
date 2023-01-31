@@ -8,8 +8,8 @@ The project includes two sides; ***Customer*** and ***Admin*** side.
 - Create order<br>
 - Make payment<br>
 - Review order and its history<br>
-- View or edit their personal details such as name, address and phone number. <br>
-<br>
+- View or edit their personal details such as name, address and phone number. 
+<br><br>
 **Admin** <br>
 - Admin dashboard includes numbers of statistics such as total order, earnings, customers and products. <br>
 - Manage customer's orders and details.<br>
