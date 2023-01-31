@@ -3,18 +3,18 @@
 McDonalds Online Ordering System is based on McDelivery website which it's function for the customer to make a food delivery order from the web-based system. 
 The project includes two sides; Customer and Admin side. 
 <br>
-**Customer** 
-Add products into cart
-Create order
-Make payment
-Review order and its history
-View or edit their personal details such as name, address and phone number. 
+**Customer** <br>
+Add products into cart<br>
+Create order<br>
+Make payment<br>
+Review order and its history<br>
+View or edit their personal details such as name, address and phone number. <br>
 <br>
-**Admin** 
-Admin dashboard includes numbers of statistics such as total order, earnings, customers and products. 
-Manage customer's orders and details.
+**Admin** <br>
+Admin dashboard includes numbers of statistics such as total order, earnings, customers and products. <br>
+Manage customer's orders and details.<br>
 <br>
-This McDonalds Online Ordering System is being developed using C#, ASP.NET, some simple Javascript code to calculate total order in the cart and Bootstrap 5 CSS to beautify the user interface.
+This McDonalds Online Ordering System is being developed using C#, ASP.NET, some simple Javascript code to calculate total order in the cart and Bootstrap 5 CSS to beautify the user interface.<br>
 
 ## License
 The source code has been published on GitHub Repository under _MIT License_.  
