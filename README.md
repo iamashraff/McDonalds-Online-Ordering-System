@@ -1,10 +1,10 @@
 
 # McDonalds Online Ordering System
 McDonalds Online Ordering System is based on McDelivery website which it's function for the customer to make a food delivery order from the web-based system. 
-The project includes two sides; Customer and Admin side. 
-<br>
+The project includes two sides; ***Customer*** and ***Admin*** side. 
+<br><br>
 **Customer** <br>
-Add products into cart<br>
+Add products to cart<br>
 Create order<br>
 Make payment<br>
 Review order and its history<br>
