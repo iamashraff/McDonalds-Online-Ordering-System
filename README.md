@@ -15,7 +15,7 @@ The project includes two sides; ***Customer*** and ***Admin*** side.
 - Admin dashboard includes numbers of statistics such as total order, earnings, customers and products. <br>
 - Manage customer's orders and details.<br>
 <br>
-This McDonalds Online Ordering System is being developed using ***C#***, ***ASP.NET***, some simple Javascript code to calculate total order in the cart and Bootstrap 5 CSS to beautify the user interface.<br>
+This McDonalds Online Ordering System is being developed using C#, ASP.NET, some simple Javascript code to calculate total order in the cart and Bootstrap 5 CSS to beautify the user interface.<br>
 
 ## License
 The source code has been published on GitHub Repository under _MIT License_.  
