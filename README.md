@@ -22,9 +22,6 @@ This project was developed using C#, ASP.NET, some simple Javascript code to cal
 ## Disclaimer
 All images and logo used for the development of this project is based on McDonalds & McDelivery Malaysia website. Resources used are copyrighted of  GERBANG ALAF RESTAURANTS SDN BHD. The project created are intended for RESEARCH & EDUCATIONAL PURPOSE ONLY and NOT FOR COMMERCIALIZATION USE.
 
-## License
-The source code has been published on GitHub Repository under _MIT License_.  
-Please visit `LICENSE` file to read the details about the license.
 
 ## About the project
 Languages :<br>
