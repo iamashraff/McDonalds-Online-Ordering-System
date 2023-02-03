@@ -1,7 +1,7 @@
-CREATE TABLE
---------------------------------------------
-  **tblAddress**
-	`CREATE  TABLE [dbo].[tblAddress]  (
+## CREATE TABLE
+
+  **tblAddress** <br>
+`CREATE  TABLE [dbo].[tblAddress]  (
 [addressID] INT  IDENTITY (1, 1)  NOT  NULL,
 [custID] INT  NULL,
 [houseNo] VARCHAR (50)  NOT  NULL,
@@ -12,9 +12,10 @@ CREATE TABLE
 PRIMARY  KEY  CLUSTERED ([addressID] ASC),
 CONSTRAINT [FK_Customer_Address] FOREIGN  KEY ([custID])  REFERENCES [dbo].[tblCustomer]  ([custID])
 );`
+<br>
 	
-	**tblAdmin**
-	`CREATE  TABLE [dbo].[tblAdmin]  (
+**tblAdmin** <br>
+`CREATE  TABLE [dbo].[tblAdmin]  (
 [Id] INT  IDENTITY (1, 1)  NOT  NULL,
 [adminUser] VARCHAR (50)  NULL,
 [adminPass] VARCHAR (200)  NULL,
@@ -22,9 +23,10 @@ CONSTRAINT [FK_Customer_Address] FOREIGN  KEY ([custID])  REFERENCES [dbo].[tblC
 [isAdmin] VARCHAR (50)  NULL,
 PRIMARY  KEY  CLUSTERED ([Id] ASC)
 );`
+<br>
 
-	**tblCart**
-	`CREATE  TABLE [dbo].[tblCart]  (
+**tblCart** <br>
+`CREATE  TABLE [dbo].[tblCart]  (
 [cartID] INT  IDENTITY (1, 1)  NOT  NULL,
 [prodID] INT  NULL,
 [custID] INT  NULL,
@@ -33,16 +35,18 @@ PRIMARY  KEY  CLUSTERED ([cartID] ASC),
 CONSTRAINT [FK_Product_Cart] FOREIGN  KEY ([prodID])  REFERENCES [dbo].[tblProduct]  ([prodID]),
 CONSTRAINT [FK_Customer_Cart] FOREIGN  KEY ([custID])  REFERENCES [dbo].[tblCustomer]  ([custID])
 );`
+<br>
 
-	**tblCategory**
-	`CREATE  TABLE [dbo].[tblCategory]  (
+**tblCategory** <br>
+`CREATE  TABLE [dbo].[tblCategory]  (
 [catID] INT  IDENTITY (1, 1)  NOT  NULL,
 [catName] VARCHAR (50)  NULL,
 [catDesc] VARCHAR (150)  NULL,
 PRIMARY  KEY  CLUSTERED ([catID] ASC)
 );`
+<br>
 
-	**tblCustomer**
+**tblCustomer** <br>
 	`CREATE  TABLE [dbo].[tblCustomer]  (
 [custID] INT  IDENTITY (1, 1)  NOT  NULL,
 [custUsername] VARCHAR (50)  NOT  NULL,
@@ -53,9 +57,10 @@ PRIMARY  KEY  CLUSTERED ([catID] ASC)
 [custPhone] VARCHAR (15)  NULL,
 PRIMARY  KEY  CLUSTERED ([custID] ASC)
 );`
+<br>
 
-	**tblOrder**
-	`CREATE  TABLE [dbo].[tblOrder]  (
+**tblOrder** <br>
+`CREATE  TABLE [dbo].[tblOrder]  (
 [orderID] INT  IDENTITY (1, 1)  NOT  NULL,
 [custID] INT  NOT  NULL,
 [orderDate] VARCHAR (50)  NULL,
@@ -67,10 +72,11 @@ PRIMARY  KEY  CLUSTERED ([custID] ASC)
 [dateCreated] DATE  NULL,
 PRIMARY  KEY  CLUSTERED ([orderID] ASC),
 CONSTRAINT [FK_Order_Customer] FOREIGN  KEY ([custID])  REFERENCES [dbo].[tblCustomer]  ([custID])
-);`
+);` 
+<br>
 
-	**tblOrderDetails**
-	`CREATE  TABLE [dbo].[tblOrderDetails]  (
+**tblOrderDetails** <br>
+`CREATE  TABLE [dbo].[tblOrderDetails]  (
 [ID] INT  IDENTITY (1, 1)  NOT  NULL,
 [orderID] INT  NOT  NULL,
 [prodID] INT  NULL,
@@ -78,10 +84,11 @@ CONSTRAINT [FK_Order_Customer] FOREIGN  KEY ([custID])  REFERENCES [dbo].[tblCus
 PRIMARY  KEY  CLUSTERED ([ID] ASC),
 CONSTRAINT [FK_OrderDetails] FOREIGN  KEY ([orderID])  REFERENCES [dbo].[tblOrder]  ([orderID]),
 CONSTRAINT [FK_OrderDetails_Product] FOREIGN  KEY ([prodID])  REFERENCES [dbo].[tblProduct]  ([prodID])
-);`
+);` 
+<br>
 
-	**tblProduct**
-	`CREATE  TABLE [dbo].[tblProduct]  (
+**tblProduct** <br>
+`CREATE  TABLE [dbo].[tblProduct]  (
 [prodID] INT  IDENTITY (1, 1)  NOT  NULL,
 [catID] INT  NOT  NULL,
 [prodName] VARCHAR (50)  NULL,
@@ -91,3 +98,4 @@ CONSTRAINT [FK_OrderDetails_Product] FOREIGN  KEY ([prodID])  REFERENCES [dbo].[
 PRIMARY  KEY  CLUSTERED ([prodID] ASC),
 CONSTRAINT [FK_Product_Category] FOREIGN  KEY ([catID])  REFERENCES [dbo].[tblCategory]  ([catID])
 );`
+<br>
