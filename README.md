@@ -1,9 +1,6 @@
-
-
-
 # ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/OnlineOrderWebApplication/Images/logo.svg?token=GHSAT0AAAAAAB5ZMXGIZC2NVXPHOAG5Y67EY6ZRRDA) McDonalds Online Ordering System
-McDonalds Online Ordering System is a web-based food ordering system is based on McDelivery website where it is for customer to make a food delivery order. The project was developed by me for Web Application Development (ISB42403) course at the Universiti Kuala Lumpur (UniKL MIIT).
-The project includes two sides; ***Customer*** and ***Admin*** side. 
+McDonalds Online Ordering System is a web-based food ordering system is based on McDelivery website where it is for customer to make a food delivery order. This project was developed by me for Web Application Development (ISB42403) course by using C# and ASP.NET at the Universiti Kuala Lumpur (UniKL MIIT).
+This project consist two sides; ***Customer*** and ***Admin*** side. 
 <br><br>
 **Customer** <br>
 - Add products to cart<br>
@@ -19,9 +16,12 @@ The project includes two sides; ***Customer*** and ***Admin*** side.
 <br>
 This project was developed using C#, ASP.NET, some simple Javascript code to calculate total order in the cart and Bootstrap 5 CSS to beautify the user interface.<br>
 
-## Disclaimer
-All images and logo used for the development of this project is based on McDonalds & McDelivery Malaysia website. Resources used are copyrighted of  GERBANG ALAF RESTAURANTS SDN BHD. The project created are intended for RESEARCH & EDUCATIONAL PURPOSE ONLY and NOT FOR COMMERCIALIZATION USE.
+## License
+The source code has been published on GitHub Repository under  _MIT License_.  
+Please visit  `LICENSE`  file to read the details about the license.
 
+## Disclaimer
+All images and logo used for the development of this project is based on McDonalds & McDelivery Malaysia website. Resources used are copyrighted of  GERBANG ALAF RESTAURANTS SDN BHD. This project are intended for RESEARCH & EDUCATIONAL PURPOSE ONLY and NOT FOR COMMERCIALIZATION USE.
 
 ## About the project
 Languages :<br>
@@ -36,6 +36,20 @@ Microsoft SQL<br>
 
 ## Database
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/database.png?token=GHSAT0AAAAAAB5ZMXGI2TL6NRKH3R4V2KM6Y6ZSXXA)
+
+## How to use ?
+1. Download or Clone this repository
+2. Open  `OnlineOrderWebApplication.sln` project file via Visual Studio 2019/2022
+3. Create new `.mdf` connection string name `connMcd.mdf` in folder `OnlineOrderWebApplication\App_Data`
+4.  Set connection string as follows :
+`Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="[YOUR_FOLDER_PATH]\App_Data\connMcd.mdf";Integrated Security=True;MultipleActiveResultSets=True;Connect Timeout=30;Application Name=EntityFramework`
+
+	Replace `[YOUR_FOLDER_PATH]` with your local folder directory. For example, mine is `C:\Users\Ashraff\OneDrive - Universiti Kuala Lumpur\SEMESTER 4 JAN 2022\ISB42403 - WEB APPLICATION DEVELOPMENT\Projects\OnlineOrderWebApplication\`
+
+5. Create database table as follows :
+|  |  |
+|--|--|
+|  |  |
 
 
 
@@ -151,3 +165,30 @@ Admin
 4.6.1 Viewing order details
 
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/MyOrder_Details.png)
+
+<hr>
+
+**5. Admin Side**
+
+**5.1 Dashboard**
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_Dashboard.png)
+
+<hr>
+
+**5.2 View Customer**
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewCustomer.png)
+
+5.2.1 View Customer Details
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewCustomer_Details.png)
+
+<hr>
+
+**5.3 View Orders**
+
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewOrder.png)
+
+5.3.1 View Order Details
+![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewOrder_Details.png)
+
+<hr>
+
