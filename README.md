@@ -44,13 +44,19 @@ Microsoft SQL<br>
 4.  Set connection string as follows :
 `Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="[YOUR_FOLDER_PATH]\App_Data\connMcd.mdf";Integrated Security=True;MultipleActiveResultSets=True;Connect Timeout=30;Application Name=EntityFramework`
 
-	Replace `[YOUR_FOLDER_PATH]` with your local folder directory. For example, mine is `C:\Users\Ashraff\OneDrive - Universiti Kuala Lumpur\SEMESTER 4 JAN 2022\ISB42403 - WEB APPLICATION DEVELOPMENT\Projects\OnlineOrderWebApplication\`
+	Replace `[YOUR_FOLDER_PATH]` with your local folder directory. For example, mine is `C:\Users\Ashraff\Projects\OnlineOrderWebApplication\`
 
-5. Create database table as follows :
-|  |  |
-|--|--|
-|  |  |
+5. Create database table as in [`CreateTableSQL.md`](https://github.com/iamashraff/McDonalds-Online-Ordering-System/blob/master/CreateTableSQL.md)
 
+6. Insert into database table as in [`InsertSQL.md`](https://github.com/iamashraff/McDonalds-Online-Ordering-System/blob/master/InsertSQL.md) :
+
+7. Create stored procedures as in [`StoredProceduresSQL.md`](https://github.com/iamashraff/McDonalds-Online-Ordering-System/blob/master/StoredProceduresSQL.md) 
+
+8. Run the project 
+
+	Note: Login as an admin by accessing the URL; `[URL]/Login.aspx` using the following credential
+	>  Username: admin
+    Password: 1234 
 
 
 # USER INTERFACE
@@ -67,17 +73,6 @@ Microsoft SQL<br>
 
 **3. Login Page**
 
-**Login Credentials**
-
-Customer 
-
-    Username: ashraff@email.com
-    Password: 1234
-
-Admin
-
-    Username: admin
-    Password: 1234
 ![Login.aspx](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Login.aspx.png?token=GHSAT0AAAAAAB5ZMXGIZRPETHA6YQLMUCOAY6ZTBOA)
 
 **3.1 Validation & Error Message**
@@ -176,9 +171,11 @@ Admin
 <hr>
 
 **5.2 View Customer**
+
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewCustomer.png)
 
 5.2.1 View Customer Details
+
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewCustomer_Details.png)
 
 <hr>
@@ -188,6 +185,7 @@ Admin
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewOrder.png)
 
 5.3.1 View Order Details
+
 ![enter image description here](https://raw.githubusercontent.com/iamashraff/McDonalds-Online-Ordering-System/master/images/Admin_ViewOrder_Details.png)
 
 <hr>
