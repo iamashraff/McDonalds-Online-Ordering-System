@@ -55,8 +55,8 @@ Microsoft SQL<br>
 8. Run the project 
 
 	Note: Login as an admin by accessing the URL; `[URL]/Login.aspx` using the following credential
-	>  Username: admin
-    Password: 1234 
+	>  Username: admin <br>
+    	Password: 1234 
 
 
 # USER INTERFACE
